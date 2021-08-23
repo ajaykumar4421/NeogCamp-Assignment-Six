@@ -5,7 +5,7 @@ var btnOutput = document.querySelector("#btn-output");
 
 
 btntranslate.addEventListener("click",function getServerUrl(){
-    serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+    serverUrl = "https://api.funtranslations.com/translate/minion.json";
     var inputTranslate = serverUrl +"?"+"text="+txtInput.value;
     fetch(inputTranslate)
     .then(response => response.json())
