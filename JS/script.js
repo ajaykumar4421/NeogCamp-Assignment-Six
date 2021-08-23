@@ -1,6 +1,5 @@
 var txtInput = document.querySelector("#textarea");
 var btntranslate = document.querySelector("#click-translate");
-var btnClear = document.querySelector("#clear-translate");
 var btnOutput = document.querySelector("#btn-output");
 
 
@@ -10,8 +9,4 @@ btntranslate.addEventListener("click",function getServerUrl(){
     fetch(inputTranslate)
     .then(response => response.json())
     .then( out => {btnOutput.innerText = out.contents.translated})
-});
-
-btnClear.addEventListener("click",function clearEventHandler(){
-    btnOutput.innerText = '';
 });
